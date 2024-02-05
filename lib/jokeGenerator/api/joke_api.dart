@@ -21,8 +21,10 @@ Future<List<String>> generateCategories() async {
 }
 
 Future<String> generateCategoryJoke(String category) async {
-  final response = await dio.get('https://api.chucknorris.io/jokes/random',
-      queryParameters: {'category': category});
+  final response = await dio.get(
+    'https://api.chucknorris.io/jokes/random',
+    queryParameters: {'category': category},
+  );
   print(response.data);
   return response as String;
 }
