@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.verygoodcore.my_app",
+      "sha256_cert_fingerprints":
+      ["48:DF:3E:40:9F:C2:1B:D9:97:34:17:5A:94:76:00:E8:5C:d5:6C:CB:D1:1F:03:72:39:DC:46:BF:B1:dd:E4:81"]
+    }
+  }]
+  
