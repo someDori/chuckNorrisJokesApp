@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/jokeGenerator/api/joke_api.dart';
 import 'package:my_app/jokeGenerator/counter.dart';
-import 'package:my_app/jokeGenerator/view/categoryJoke_page.dart';
-import 'package:my_app/jokeGenerator/view/randomJoke_page.dart';
 import 'package:my_app/l10n/l10n.dart';
 
 class HomePage extends StatelessWidget {
@@ -44,7 +42,6 @@ class _HomeTextState extends State<HomeText> {
         const Spacer(),
         OutlinedButton(
           onPressed: () async {
-            final categories = await generateCategories();
             // ignore: unawaited_futures, use_build_context_synchronously
             Navigator.push(
               context,

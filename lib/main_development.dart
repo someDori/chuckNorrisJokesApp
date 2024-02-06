@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:my_app/app/app.dart';
 import 'package:my_app/bootstrap.dart';
 

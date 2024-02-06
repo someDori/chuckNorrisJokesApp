@@ -1,6 +1,4 @@
 import 'package:bloc/bloc.dart';
-import 'package:dio/dio.dart';
-import 'package:my_app/jokeGenerator/api/joke_api.dart';
 
 class JokeGenetatorCubit extends Cubit<String> {
   JokeGenetatorCubit() : super('');

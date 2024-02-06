@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_app/jokeGenerator/api/joke_api.dart';
 import 'package:my_app/jokeGenerator/counter.dart';
-import 'package:my_app/l10n/l10n.dart';
 
 class CategoryJokePage extends StatelessWidget {
   const CategoryJokePage({required this.categories, super.key});
@@ -59,7 +58,6 @@ class CategoryJokeView extends StatelessWidget {
                   ),
                 ),
               );
-              print(categories[index]);
             },
           );
         }),
