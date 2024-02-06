@@ -82,14 +82,16 @@ class SingleCategoryJokeView extends StatelessWidget {
       appBar: AppBar(title: const Text('Appbar')),
       body: BlocBuilder<JokeGenetatorCubit, String>(
         builder: (context, state) {
-          return Center(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text(
-                context.select(
-                  (JokeGenetatorCubit cubit) => cubit.state,
+          return SingleChildScrollView(
+            child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text(
+                  context.select(
+                    (JokeGenetatorCubit cubit) => cubit.state,
+                  ),
+                  style: const TextStyle(fontSize: 16),
                 ),
-                style: const TextStyle(fontSize: 16),
               ),
             ),
           );
