@@ -26,7 +26,7 @@ enum CategoryName {
   travel,
 }
 
-enum jokeType {
+enum JokeType {
   random,
   fromCategory,
 }

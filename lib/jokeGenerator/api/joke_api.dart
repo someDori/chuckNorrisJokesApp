@@ -5,7 +5,7 @@ final dio = Dio();
 Future<String> generateJoke() async {
   // ignore: inference_failure_on_function_invocation
   final response = await dio.get('https://api.chucknorris.io/jokes/random');
-  print(response.data['value']);
+  // ignore: avoid_dynamic_calls
   return response.data['value'] as String;
 }
 
@@ -23,10 +23,10 @@ Future<List<String>> generateCategories() async {
 }
 
 Future<String> generateCategoryJoke(String category) async {
+  // ignore: inference_failure_on_function_invocation
   final response = await dio.get(
     'https://api.chucknorris.io/jokes/random',
     queryParameters: {'category': category},
   );
-  print(response.data);
   return response as String;
 }

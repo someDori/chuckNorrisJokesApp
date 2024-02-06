@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_app/jokeGenerator/api/joke_api.dart';
-import 'package:my_app/jokeGenerator/cubit/jokeGenerator_cubit.dart';
+import 'package:my_app/jokeGenerator/cubit/joke_generator_cubit.dart';
 import 'package:my_app/l10n/l10n.dart';
 
 class RandomJokePage extends StatelessWidget {
